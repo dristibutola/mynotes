@@ -1,0 +1,10 @@
+span is used to add different attributes to any words inside a <p>
+span is an inline element
+block-level elements take up the whole page width,while inline elements exist within those lin
+es, and only take up as much of the screen as they need to
+any closing block element creates a line break.
+text-align can only align  block-level elements to the right.
+THe best way to right-justify oinline spans is  css property float
+floats let the content of a <span> or more frequently, allow to slide an image ,around inside
+its container elements
+
