@@ -1,0 +1,77 @@
+chr(x) converts x integer to a character
+ord(x) converts character x to an integer
+
+from random import *
+print random()
+
+from random import *
+x= randint(1,100)
+print(x)
+
+str1.count('x') counts the number of occurences of 'x' in str1
+str1.find('x')= returns the position of character 'x' 
+str1.lower()= returns the str1 string in lowercase(temporary)
+str2.upper()= returns the str2 string in uppercase(temporary)
+str1.replace('a','b')= replaces all the occurences of 'a' with 'b' in the string
+str1.strip()=removes leadind/trailing whitespace from string
+
+append:appends object at end
+x=[1,2,3]
+x.append([4,5])
+print(x)
+>>>[1,2,3,[4,5]]
+ 
+extend:extends list by appending elements from the iterable
+x=[1,2,3]
+x.extend([4,5])
+print(x)
+>>> [1,2,3,4,5]
+
+x=['i','am']
+x.extend('namit yadav')
+print(x)
+>>>['i','am','n','a','m','i','t',' ','y','a','d','v']
+
+x=['i','am']
+x.extend(['namit','yadav']
+print(x)
+>>>['i','am','namit','yadav']
+
+str1.index('x') - returns the index of 'x' in the list
+str1.insert('y','x') - inserts 'x' at location 'y'
+str1.pop() - returns last element then removes it from the list
+str1.remove('x') - finds and removes first 'x' from list
+str1.reverse() - reverses the elements in the list
+li1.sort() - sorts the list alphabetically in ascending order, or numerical in ascending order 
+sorted(lis1,reverse,key)
+
+for eg.
+lis1=["1a5",".z8","vc9","vk"]
+#now defining a custom method for lis1
+def index2sort(lis1):
+    return(lis1[1])
+print sorted(lis1,reverse=False,key=index2sort)
+
+default can be used  key=len or key=str.lower
+
+nums = [1, 2, 3, 4]
+
+  squares = [ n * n for n in nums ]   ## [1, 4, 9, 16]
+
+The syntax is [ expr for var in list ] -- the for var in list looks like a regular for-loop, but without the colon (:). The expr to its left is evaluated once for each element to give the values for the new list. Here is an example with strings, where each string is changed to upper case with '!!!' appended:
+
+  strs = ['hello', 'and', 'goodbye']
+
+  shouting = [ s.upper() + '!!!' for s in strs ]
+  ## ['HELLO!!!', 'AND!!!', 'GOODBYE!!!']
+
+You can add an if test to the right of the for-loop to narrow the result. The if test is evaluated for each element, including only the elements where the test is true.
+
+  ## Select values <= 2
+  nums = [2, 8, 1, 6]
+  small = [ n for n in nums if n <= 2 ]  ## [2, 1]
+
+  ## Select fruits containing 'a', change to upper case
+  fruits = ['apple', 'cherry', 'bannana', 'lemon']
+  afruits = [ s.upper() for s in fruits if 'a' in s ]
+  ## ['APPLE', 'BANNANA']

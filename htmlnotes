@@ -7,4 +7,4 @@ text-align can only align  block-level elements to the right.
 THe best way to right-justify oinline spans is  css property float
 floats let the content of a <span> or more frequently, allow to slide an image ,around inside
 its container elements
-
+ opacity
